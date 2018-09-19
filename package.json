@@ -1,0 +1,11 @@
+{
+  "name": "cf-node-app",
+  "version": "1.0.0",
+  "description": "My first CF node App",
+  "main": "server.js",
+  "author": "theo.despres@teamwork.net",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

@@ -1,0 +1,5 @@
+---
+applications:
+- name: cf-node-app
+  host: cf-node-app
+  memory: 128M
