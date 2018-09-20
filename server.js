@@ -7,10 +7,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.listen(port, function () {
 	console.info("Listening on port: " + port);
+	console.log(process.versions);
 });
 
 app.get('/', function (req, res) {
-	res.type("text/html").status(200).send('<html><head></head><body><h1>Welcome to my first CF Node App !</h1><br /><a href="/Get">Do a Get Call</a></body></html>');
+	res.type("text/html").status(200).send('<html><head></head><body><h1>Welcome to my first CF Node App !</h1><br />Node.js versions :<br /><pre>'+JSON.stringify(process.versions)+'</pre><a href="/Get">Do a Get Call</a></body></html>');
 });
 
 app.get('/Get', function (req, res) {
